@@ -20,7 +20,7 @@
 <body>
 <main>
   <h1>GeoQuest Privacy Policy</h1>
-  <p class="meta">Effective date: June 12, 2026 &middot; App: GeoQuest — World Geography Trivia (com.geoquest.app)</p>
+  <p class="meta">Effective date: July 4, 2026 &middot; App: GeoQuest — World Geography Trivia (io.github.jimmyjoel4u.geoquest)</p>
 
   <p>GeoQuest is a geography trivia game designed for players of all ages, including children. We collect as little information as possible, and this policy explains exactly what the app does with data, in plain language.</p>
 
@@ -29,6 +29,7 @@
     <li><strong>An anonymous player ID.</strong> When you play, Firebase (a Google service) creates a random identifier for your device. It is not your name, email, or phone number, and we cannot identify you from it.</li>
     <li><strong>Your chosen explorer nickname and cartoon avatar.</strong> You pick these in the app. We recommend children do not use their real full name — the app never requires it.</li>
     <li><strong>Gameplay data.</strong> Scores, XP, levels, streaks, achievements, and duel results. This is stored on your device and synced to our online database (Google Firestore) under your anonymous ID so leaderboards and cloud save work.</li>
+    <li><strong>A notification token.</strong> If you allow notifications, Firebase Cloud Messaging creates a token for your device so we can deliver duel alerts. It is a device identifier tied to your anonymous ID — not to you personally — and is removed if you turn notifications off or uninstall the app.</li>
     <li><strong>Google account info — only for players 13 and older.</strong> Players in the 13+ age group may optionally connect a Google account to save progress across devices. This shares the account's name and email address with the app. <strong>This option is never shown to players in the under-13 age groups.</strong></li>
   </ul>
 
@@ -52,29 +53,38 @@
   <h2>5. Purchases</h2>
   <p>Optional in-app purchases and subscriptions are processed entirely by Google Play Billing. We never see or store your payment details. Purchases can be managed or cancelled in the Google Play app.</p>
 
-  <h2>6. Where Data Lives & Security</h2>
+  <h2>6. Notifications</h2>
+  <p>GeoQuest can send two kinds of notifications, and both are optional:</p>
+  <ul>
+    <li><strong>Duel alerts (push).</strong> When another player challenges you or answers your duel, we send a notification through Firebase Cloud Messaging. Delivering these requires storing the device notification token described in section 1.</li>
+    <li><strong>Play reminders (local).</strong> Friendly reminders — such as your daily hearts refilling or the daily quiz being ready — are scheduled on your device and are not sent from our servers or shared with anyone.</li>
+  </ul>
+  <p>You can turn notifications off at any time from the app's settings or your device's system settings. We do not use notifications for advertising.</p>
+
+  <h2>7. Where Data Lives &amp; Security</h2>
   <ul>
     <li><strong>On your device:</strong> settings, hearts, and progress are stored locally. The in-app "Reset All Data" button erases them.</li>
     <li><strong>In the cloud:</strong> gameplay stats sync to Google Firestore over encrypted (HTTPS) connections, protected by security rules that only allow each player to write their own data.</li>
   </ul>
 
-  <h2>7. Data Retention & Deletion</h2>
+  <h2>8. Data Retention &amp; Deletion</h2>
   <p>Local data is deleted when you use "Reset All Data" or uninstall the app. Cloud data is kept while your account is active; email us to request deletion and we will remove it within 30 days.</p>
 
-  <h2>8. Your Rights (GDPR &amp; similar laws)</h2>
+  <h2>9. Your Rights (GDPR &amp; similar laws)</h2>
   <p>You may request access to, correction of, or deletion of the data linked to your player ID at any time using the contact below. Because most data is anonymous, please contact us from within the affected device where possible so we can locate the right record.</p>
 
-  <h2>9. Third-Party Services</h2>
+  <h2>10. Third-Party Services</h2>
   <ul>
     <li>Google Firebase (authentication &amp; database) — <a href="https://firebase.google.com/support/privacy">Firebase privacy</a></li>
+    <li>Google Firebase Cloud Messaging (push notifications) — <a href="https://firebase.google.com/support/privacy">Firebase privacy</a></li>
     <li>Google AdMob (ads, child-directed mode) — <a href="https://support.google.com/admob/answer/6128543">AdMob &amp; families</a></li>
     <li>Google Play Billing (purchases)</li>
   </ul>
 
-  <h2>10. Changes to This Policy</h2>
+  <h2>11. Changes to This Policy</h2>
   <p>If we change how the app handles data, we will update this page and the effective date above before the change ships.</p>
 
-  <h2>11. Contact</h2>
+  <h2>12. Contact</h2>
   <p>Questions or data requests: <a href="mailto:jimmyjoel4u@gmail.com">jimmyjoel4u@gmail.com</a></p>
 </main>
 </body>
